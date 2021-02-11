@@ -1,0 +1,21 @@
+{
+  "name": "debox",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "debox"
+  },
+  "bin": {
+    "debox": "./src/cli/cli.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "chalk": "^4.1.0",
+    "progress": "^2.0.3",
+    "yargs": "^16.2.0"
+  }
+}
