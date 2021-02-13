@@ -1,6 +1,6 @@
 {
   "name": "debox",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A dynamic, modular boilerplate manager for NodeJS.",
   "main": "app.js",
   "scripts": {
