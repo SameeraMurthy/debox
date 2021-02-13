@@ -1,0 +1,27 @@
+{
+    "name": "static-page",
+    "fileSystem": [
+        {
+            "type": "file",
+            "name": "index.html",
+            "content": "<!-- If youre on VScode, type \"!\" and press enter. -->"
+        },
+        {
+            "type": "file",
+            "name": "style.css",
+            "content": ""
+        },
+        {
+            "type": "file",
+            "name": "script.js",
+            "content": ""
+        },
+        {
+            "type": "folder",
+            "name": "assets",
+            "content": [
+
+            ]
+        }
+    ]
+}

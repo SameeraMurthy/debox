@@ -1,6 +1,7 @@
 const fs = require('fs')
 
-let generate =  (path, tree) => {
+let generate =  (path, raw) => {
+    let tree = JSON.parse(raw).fileSystem
     for (let item in tree) {
         if (tree[item].type == "folder") {
             let folder_path = path + tree[item].name + "/"
@@ -9,8 +10,13 @@ let generate =  (path, tree) => {
                 generate(folder_path, tree[item].content)
             }
         } else if (tree[item].type == "file") {
-            if (typeof tree[item].content == "string") {
-                fs.writeFileSync(path + tree[item].name, tree[item].content)
+            let extension = tree[item].name.split('.').pop();
+            if (extension == "exe" || extension == "dmg" || extension == "deb" || extension == "appimage") {
+                return console.log("The template you chose to add is unsafe.")
+            } else {
+                if (typeof tree[item].content == "string") {
+                    fs.writeFileSync(path + tree[item].name, tree[item].content)
+                }
             }
         }
     }

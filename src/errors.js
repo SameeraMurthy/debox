@@ -8,7 +8,7 @@ module.exports = {
                 "code": code,
                 "text": [
                     `\n${chalk.bgRed(chalk.black(" Debox ERROR"))} -> ${chalk.bold(`The directory ${dir} doesn't exist.`)}`,
-                    `\n${chalk.bgYellow("ERR CODE")}${chalk.blue(code)}`,
+                    `\n${chalk.red("ERR CODE")} ${chalk.blue(code)}`,
                     "\n"
                 ]
             }
@@ -21,7 +21,7 @@ module.exports = {
                 "code": code,
                 "text": [
                     `\n${chalk.bgRed(chalk.black(" Debox ERROR "))} -> ${chalk.bold(`The package '${package}' install doesn't exist.`)}`,
-                    `\n${chalk.bgYellow("ERR CODE")}${chalk.blue(code)}`,
+                    `\n${chalk.red("ERR CODE")} ${chalk.blue(code)}`,
                     `\nDid you mean something else? Check your spelling and see if you made a mistake.`,
                     "\n"
                 ]
@@ -36,7 +36,7 @@ module.exports = {
                 "text": [
                     `\n${chalk.bgRed(chalk.black(" Debox ERROR "))} -> ${chalk.bold("Must provide a package name, or URL to add.")}`,
                     `\n${chalk.bgGrey(" ERR CODE ")} ${chalk.blue(code)}`,
-                    `\n${chalk.bold("Usage:")} debox add <package>`
+                    `\n${chalk.bold("Usage:")} debox add <package> <path>`
                 ]
             }
         }

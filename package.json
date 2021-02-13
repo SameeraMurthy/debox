@@ -1,17 +1,26 @@
 {
   "name": "debox",
   "version": "1.0.0",
-  "description": "",
+  "description": "A dynamic, modular boilerplate manager for NodeJS.",
   "main": "app.js",
   "scripts": {
     "test": "debox"
   },
   "bin": {
-    "debox": "./src/cli/cli.js"
+    "debox": "./src/cli.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "preferGlobal": true,
+  "keywords": ["boilerplate-generator", "templates"],
+  "author": "Sameera M.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SameeraMurthy/debox.git"
+  },
+  "bugs": {
+    "url": "https://github.com/SameeraMurthy/debox/issues"
+  },
+  "homepage": "https://github.com/SameeraMurthy/debox#readme",
   "dependencies": {
     "axios": "^0.21.1",
     "chalk": "^4.1.0",
